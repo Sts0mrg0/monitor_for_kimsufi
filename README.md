@@ -17,5 +17,13 @@ crontab -e
 ```
 ###### 3.使用方糖实现微信推送
 将kimsufi.php最后一行的file_get_contents内容更换为你自己的key，申请地址为：http://sc.ftqq.com
+###### 4.添加自己需要的检测
+格式如下，填写
+```
+if(checkKimsufi("174sk94"))
+{
+    send("新版ks4a特价有货", $desp = 'https://www.kimsufi.com/en/order/kimsufi.cgi?hard=174sk94');
+}
+```
 
 原始技术来源于来源于http://www.hostloc.com/thread-408681-1-1.html.</br>
